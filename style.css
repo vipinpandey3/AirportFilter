@@ -99,6 +99,7 @@ body {
 
 .container .table-container .table {
     border-collapse: collapse;
+    border: 0.5px solid grey;
     width: 100%;
 }
 
