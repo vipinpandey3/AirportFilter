@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airport List</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+    <div class="container">
+        <div class="heading">
+            <p>Filter <span>airports</span></p>
+            <span><img src="tile.svg" alt="tile" width="20px" height="20px"></span>
+        </div>
+
+        <div class="filters">
+            <div class="type-filter">
+                <p>Type</p>
+                <div class="checkbox-container">
+                    <!-- <label class="checkbox-list-item">
+                    <input type="checkbox" value="">
+                    Small
+                      </label> -->
+                      <div class="checkbox-list-item">
+                          <input type="checkbox" id="small" value="small" class="checkbox">
+                          <label for="small">Small</label>
+                      </div>
+
+                      <div class="checkbox-list-item">
+                        <input type="checkbox" id="medium" value="medium" class="checkbox">
+                        <label for="medium">Medium</label>
+                    </div>
+                    <div class="checkbox-list-item">
+                        <input type="checkbox" id="large" value="large" class="checkbox">
+                        <label for="large">Large</label>
+                    </div>
+                    <div class="checkbox-list-item">
+                        <input type="checkbox" id="heliport" value="heliport" class="checkbox">
+                        <label for="heliport">Heliport</label>
+                    </div>
+                    <div class="checkbox-list-item">
+                        <input type="checkbox" id="closed" value="closed" class="checkbox">
+                        <label for="closed">Closed</label>
+                    </div>
+                    <div class="checkbox-list-item">
+                        <input type="checkbox" id="favorites" value="in your favorites" class="checkbox">
+                        <label for="favorites">In Your Favorites</label>
+                    </div>
+                </div>
+            </div>
+            <div class="input-filter">
+                <p>Filter by search</p>
+                <input type="text" class="search-filter">
+            </div>
+        </div>
+
+        <div class="table-container">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>ICAO</th>
+                        <th>IATA</th>
+                        <th>Elev.</th>
+                        <th>Lat.</th>
+                        <th>Long.</th>
+                        <th>type</th>
+                    </tr>
+                </thead>
+                <tbody class="table-body">
+                </tbody>
+            </table>
+        </div>
+
+        <div class="footer">
+            <button class="prev"><i class="fas fa-arrow-left"></i></button>
+            <p class="list-value">Showing <span class="number-1">5-8</span> of <span class="number-2">10,3282</span> result</p>
+            <button class="next"><i class="fas fa-arrow-right"></i></button>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/14bc102882.js" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+</html>
